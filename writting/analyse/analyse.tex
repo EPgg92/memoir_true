@@ -1,0 +1,88 @@
+\documentclass[onecolumn, 12pt]{article}
+
+%!TeX spellcheck =fr
+  \usepackage[utf8]{inputenc}
+  \usepackage{hyperref}
+  \usepackage[T1]{fontenc}
+  \usepackage[francais]{babel}
+  \usepackage{layout}
+  \usepackage{verbatim}[4]
+  \usepackage{color}
+
+  \usepackage{graphicx}
+  \usepackage{caption}
+  \usepackage{subcaption}
+
+  \usepackage{titlesec}
+
+  \setcounter{secnumdepth}{4}
+
+  \titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+  \titlespacing*{\paragraph}
+  {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\title{Analyse des résultats FNC}
+  \author{Enzo Poggio}
+\begin{document}
+\maketitle{}
+
+
+\begin{abstract}
+ Dans cette première partie nous tentons de faire une analyse d'erreurs
+ comparative des participants de la FNC. Nous avons reproduit les résultats de
+ tous les participants\footnote{À l'exeption de Solat in the Swen qui ont laissé
+  une copie de leur CSV de leurs résultats, pour leurs deux modèles sur leur
+ répertoire Github.}.
+\end{abstract}
+\section{Un aperçu de l'ensemble de test.}
+\begin{center}
+ 
+ \begin{tabular}{ r | c c c c | c}
+  Stance      & unrelated & agree  & disagree & discuss &          
+  Somme    \\
+  \hline
+  Nombre      & 18349     & 1903   & 697      & 4464    & 25413    \\
+  Pourcentage & 72.20\%   & 7.48\% & 2.74\%   & 17.56\% & 100\%    \\
+  Score FNC   & 4587.25   & 1903   & 697      & 4464    & 11651.25 \\
+ \end{tabular}
+ \captionof{table}{Répartiotion des données dans l'ensembe de test.}
+\end{center}
+
+Il y a 7064 points à marquer avec les \textit{Related} et seulement 4587.25
+points avec les \textit{Unrelated}.
+Ainsi comme nous l'avions vu précédement trouvé
+un \textit{Related} rapporte 4 fois plus de points qe trouvé un \textit{Unrelated}.
+
+Afin de produire des hypothèses non-biaisées  \footnote{Du moins des hypothèses qui ne soient pas ajustées totalement à l'ensemble de test final.}, nous allons faire des observations des résultats des différents modèles sur 80\% des entrées de l'ensemble de test.
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c}
+  Stance      & unrelated & agree  & disagree & discuss &        
+  Somme    \\
+  \hline
+  Nombre      & 14662     & 1568   & 550      & 3550    & 20330  \\
+  Pourcentage & 72.12\%   & 7.71\% & 2.70\%   & 17.46\% & 100\%  \\
+  Score FNC   & 3665.5    & 1568   & 550      & 3550    & 9333.5 \\
+ \end{tabular}
+ \captionof{table}{Répartition des données dans l'ensembe de test à 80\%.}
+\end{center}
+
+Le corpus de test étant partiellement ordonné nous avons retiré les 20\% de manière ordonnée\footnote{En effet, nous avons retiré toutes les entrées dont l'indice été divisible par 5 ou 10} aussi.
+
+\section{Les résultats et les scores des participants.}
+Ici nous présentons les différents résultats des modèles de chaque participant. Notez que les tables de confusions ont horizontalement les labels de vérité et verticalement les prédictions.
+\subsection{Solat in the Swen.}
+\input{subsections/participants/solat}
+
+\subsection{Le système Athene}
+\input{subsections/participants/athene}
+
+\subsection{UCL Machine Reader}
+\input{subsections/participants/uclmr}
+
+
+
+\end{document}
+\grid

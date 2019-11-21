@@ -1,0 +1,93 @@
+\documentclass[onecolumn, 12pt]{article}
+
+%!TeX spellcheck =fr
+  \usepackage[utf8]{inputenc}
+  \usepackage{hyperref}
+  \usepackage[T1]{fontenc}
+  \usepackage[francais]{babel}
+  \usepackage{layout}
+  \usepackage{verbatim}[4]
+  \usepackage{color}
+
+  \usepackage{graphicx}
+  \usepackage{caption}
+  \usepackage{subcaption}
+
+  \usepackage{titlesec}
+
+  \setcounter{secnumdepth}{4}
+
+  \titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+  \titlespacing*{\paragraph}
+  {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\title{Premier modèle pour répondre à la FNC.}
+  \author{Enzo Poggio}
+\begin{document}
+\maketitle{}
+
+
+\begin{abstract}
+ Présentation du premier modèle, son architecture, ses résultats et son analyse.
+ Nous utilisons l'ensemble de test final.
+\end{abstract}
+
+\section{Premier modèle.}
+\subsection{Explication du modèle.}
+Comme nous l'avons vu précédement les combinaisons entre les modèles déjà présentés à la FNC peuvent atteindre de hauts résultats.
+Notre premier modèle sera un jet naif de combinaisons de deux modèles.
+C'est-à-dire que nous prendrons deux sous-modèles qui génèreront des probalités de label pour chaque entrée.
+Nous nous s'inspirerons de la méthode d'unification de Solat.
+Nous utiliserons donc aussi un \textit{ 50/50 weighted average} pour combiner les résultats.
+
+Notre première architecture utilisera le sous-modèle arborescent de Solat et le modèle de UCL Machine Reader.
+
+\textcolor{red}{Notre seconde architecture utilisera le sous-modèle arborescent de Solat et le modèle d'Athene. (\textbf{Je n'arrive pas à trouver comment générer les probabilités de classe dans le code d'Athene. Donc je n'ai pas de second résultats pour le moment.})}
+\subsection{Résultats}
+
+\subsubsection{Modéles mixte Solat/UCLMR}
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{mix solat uclmr}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 963   & 0        & 819     & 121       & 1903  \\
+  disagree  & 198   & 1        & 377     & 121       & 697   \\
+  discuss   & 606   & 3        & 3612    & 243       & 4464  \\
+  unrelated & 21    & 0        & 166     & 18162     & 18349 \\
+  \hline
+  Somme     & 1788  & 4        & 4974    & 18647     & 25413 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+Cette table de confusion ressemble beaucoup à celle de Solat dans l'analyse sur 80\% du corpus.
+Sans surprise, la classe disagree n'est pas améliorée.
+Par contre, les classes agree, discuss et unrelated sont légèrement augmentées.
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{mix solat uclmr}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.51  & 0.0      & 0.81    & 0.99      \\
+  Rappel     & 0.54  & 0.25     & 0.73    & 0.97      \\
+  F1score    & 0.52  & 0.0      & 0.77    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.47}\\
+  Score FNC & \multicolumn{4}{c}{9617.25}\\
+  Pourcentage FNC & \multicolumn{4}{c}{82.54}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+Nous constatons un gain de 0.52\% par rapport au meilleur des systèmes de la FNC.
+Ceci est peu mais montre une amélioration minime de la précision de la classe agree et de la classe discuss.
+La classe disagree est encore négligée par le modèle arborescent de Solat.
+En conséquence, le modèle UCLMR biaisé par Solat ne permet pas d'améliorer la précision de la classe disagree.
+
+\end{document}
+\grid

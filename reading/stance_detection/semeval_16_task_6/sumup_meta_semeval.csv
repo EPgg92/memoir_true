@@ -1,0 +1,8 @@
+file_name,article_name,who,institution,goal,context,datas,methodology,features,modele,algorithm,results,analyse,limites,relevance
+S16-1003.pdf,SemEval-2016 Task 6: Detecting Stance in Tweets,"Saif M. Mohammad, Svetlana Kiritchenko, Parinaz Sobhani, Xiaodan Zhu, Colin Cherry","National Research Council Canada, University of Ottawa",Presenter de manière exhaustive les résultat de la semeval !,SemEval-2016 Task 6:,SemEval-2016 Task 6,différentes méthodologies,étérauclite lire sous dossier,sousdossier,sousdossier,sousdossier,sousdossier,sousdossier,
+S16-2021.pdf,"Detecting Stance in Tweets
+And Analyzing its Interaction with Sentiment","Parinaz Sobhani, Saif M. Mohammad, Svetlana Kiritchenko","EECS, University of Ottawa, National Research Council Canada",,SemEval-2016 Task 6:,SemEval-2016 Task 6:,augmenter les systèmes simple avec des features simple suplémentaire,voir modèle,"Our classifiers
+a. n-grams
+b. n-grams, embeddings
+c. n-grams, sentiment lexicons
+d. all three feature sets",,Ftmacro et Ftmicro,,,

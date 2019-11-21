@@ -1,0 +1,58 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction: Qu'est-ce qu'une Fake News?}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Vers une d\351finition du concept de Fake News.}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Produire des Fake News; une intention de tromper.}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Limites de la d\351finition.}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Pourquoi produire des Fake News?}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Le contexte des Fake News.}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Le syst\350me mon\351taire des Fake News.}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.3}{Raisons id\351ologiques.}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Les origines des Fake News.}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{Des m\351dias n\351gligents.}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{Des organisations malveillantes internationales.}{section.1.3}% 11
+\BOOKMARK [1][-]{section.1.4}{La propagation des Fake News.}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.4.1}{Les r\351seaux sociaux : m\351diations des Fake News}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.2}{Le biais de confirmation.}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.3}{Tri de l'information selon Kahneman.}{section.1.4}% 15
+\BOOKMARK [1][-]{section.1.5}{Les risques des Fake News.}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.5.1}{Les risques politiques.}{section.1.5}% 17
+\BOOKMARK [2][-]{subsection.1.5.2}{Les risques sanitaires.}{section.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.5.3}{D\351tournement des news vers des sujets clivants.}{section.1.5}% 19
+\BOOKMARK [1][-]{section.1.6}{L\351gitimit\351 du projet et motivations.}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.7}{Comment d\351tecter une Fake News?}{chapter.1}% 21
+\BOOKMARK [2][-]{subsection.1.7.1}{Comment v\351rifier des informations ?}{section.1.7}% 22
+\BOOKMARK [2][-]{subsection.1.7.2}{M\351thode informatique actuelle: Stance Detection.}{section.1.7}% 23
+\BOOKMARK [0][-]{chapter.2}{\311tat de l'art: Stance Detection}{}% 24
+\BOOKMARK [1][-]{section.2.1}{Vers une d\351finition.}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.1.1}{Formalisation de la Stance Detection.}{section.2.1}% 26
+\BOOKMARK [2][-]{subsection.2.1.2}{Domaine de la d\351tection de parti.}{section.2.1}% 27
+\BOOKMARK [2][-]{subsection.2.1.3}{La gen\350se de la d\351tection de parti pris.}{section.2.1}% 28
+\BOOKMARK [2][-]{subsection.2.1.4}{Application g\351n\351rale et relative au Fake News.}{section.2.1}% 29
+\BOOKMARK [1][-]{section.2.2}{SemEval-2016 Task 6.}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.1}{Description g\351n\351rale de la t\342che.}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.2}{Les participants.}{section.2.2}% 32
+\BOOKMARK [1][-]{section.2.3}{Fake News Challenge.}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.3.1}{Description g\351n\351rale de la t\342che}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.2}{Solat in the swen.}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.3}{Athene \(UKP Lab\).}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.4}{UCL Machine reading.}{section.2.3}% 37
+\BOOKMARK [2][-]{subsection.2.3.5}{Discussion comparative des mod\350les et des r\351sultats.}{section.2.3}% 38
+\BOOKMARK [0][-]{chapter.3}{Un challenge; des tentatives!}{}% 39
+\BOOKMARK [1][-]{section.3.1}{Analyse des r\351sultats des participants et cr\351ation d'hypoth\350ses.}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.1.1}{Un aper\347u de l'ensemble de test.}{section.3.1}% 41
+\BOOKMARK [1][-]{section.3.2}{Les r\351sultats et les scores des participants.}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.2.1}{Talos in the Swen.}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.2}{Le syst\350me Athene}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.3}{UCL Machine Reader}{section.3.2}% 45
+\BOOKMARK [2][-]{subsection.3.2.4}{Analyses et Hypoth\350ses}{section.3.2}% 46
+\BOOKMARK [1][-]{section.3.3}{Mod\350les par combinaison: Le vote de majorit\351}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.3.1}{Explication du mod\350le.}{section.3.3}% 48
+\BOOKMARK [2][-]{subsection.3.3.2}{Les r\351sultats des votes de majorit\351}{section.3.3}% 49
+\BOOKMARK [1][-]{section.3.4}{Mod\350les par combinaison: \040Par moyenne}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.4.1}{Mod\350les utiliseant 50/50 weighted average}{section.3.4}% 51
+\BOOKMARK [2][-]{subsection.3.4.2}{R\351sultats}{section.3.4}% 52
+\BOOKMARK [1][-]{section.3.5}{Apprentissage par ensemble: \040Avec Single Layer Learner}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.5.1}{Explication du mod\350le}{section.3.5}% 54
+\BOOKMARK [2][-]{subsection.3.5.2}{R\351sultats}{section.3.5}% 55
+\BOOKMARK [1][-]{section.3.6}{Discussions}{chapter.3}% 56
+\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Appendice}{}% 58

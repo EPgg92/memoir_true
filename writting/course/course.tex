@@ -1,0 +1,180 @@
+\documentclass[onecolumn, 12pt]{article}
+
+%!TeX spellcheck =fr
+  \usepackage[utf8]{inputenc}
+  \usepackage{hyperref}
+  \usepackage[T1]{fontenc}
+  \usepackage[francais]{babel}
+  \usepackage{layout}
+  \usepackage{verbatim}[4]
+  \usepackage{color}
+
+  \usepackage{graphicx}
+  \usepackage{caption}
+  \usepackage{subcaption}
+
+  \usepackage{titlesec}
+
+  \setcounter{secnumdepth}{4}
+
+  \titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+  \titlespacing*{\paragraph}
+  {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\title{Course aux avantages FNC}
+  \author{Enzo Poggio}
+\begin{document}
+\maketitle{}
+
+
+\begin{abstract}
+ La course est une méthode d'évaluation des systèmes entre eux.
+ Elle permet d'avoir le détail des erreurs de chaque système.
+ Ainsi, elle nous montre les lacunes chez chacun d'eux,
+ et par ailleurs, les avantages que certains systèmes ont sur les autres.
+ De plus, elle nous permet de formuler des hypothèses pour des améliorations ultérieures.
+ La course, comme l'analyse des résultats, se passe seulemet sur 80 \% de l'ensemble de test.\end{abstract}
+ 
+ \section{La course.}
+ \subsection{Départ au point de rencontre.}
+ 
+ \begin{center}
+  
+  \begin{tabular}{ r | c c c c | c}
+   Stance      & unrelated & agree   & disagree & discuss & Somme   \\ \hline
+   Points      & 3560      & 406     & 1        & 2204    & 6171    \\
+   Différence & 105.5     & 1162    & 549      & 1346    & 3162.5  \\
+   Pourcentage & 97.12\%   & 25.89\% & 0.18\%   & 62.08\% & 66.11\% \\
+  \end{tabular}
+  \captionof{table}{Résumé de l'avancement commun des participants (FNC score)}
+ \end{center}
+ 
+ Le  point de rencontre est l'avancement commun des participants.
+ C'est-à-dire tous ce que les participants ont labélisés de la même manière, et qui est juste.
+ C'est le minimum qu'obtient l'ensemble des systèmes combinés.
+ Dans le tableau ci-dessus, on se réfère à plusieurs éléments.
+ La ligne \og points \fg indique le nombre d'élément bien labélisé par label.
+ La ligne \og différence \fg est la sous-straction du nombre d'éléments total du label, moins ceux trouvés.
+ Enfin, la ligne \og pourcentage \fg est l'exactitude des éléments communs aux systèmes par label.
+ Par extension, il nous indique  combien de pourcentage d'amélioration il nous reste à faire.
+ 
+ On peut alors initialiser un compteur pour chacun des participants:
+ \begin{center}
+  \begin{tabular}{ r | c || c c c }
+           & Points & Solat & Athene & UCLMR \\ \hline
+   Départ & 6171   & 6171  & 6171   & 6171  \\
+  \end{tabular}
+  \captionof{table}{Initailisation des compteurs pour la course.}
+ \end{center}
+ 
+ 
+ \subsection{Progression par label.}
+ Ainsi dans cette section nous allons voir comment les différents systèmes se départagent sur chacun des labels.
+ Nous allons ajouter une dimension que nous nommerons \og avantage\fg.
+ Un système a un avantage quand il n'a pas fait d'erreur là où un ou les deux autres systèmes en ont commis une.
+ Nous parlerons de \og désavantage commun\fg si les trois systèmes ont fait une erreur de classification.
+ Nous appelerons \og avantage fort\fg: un avantage sur deux systèmes.
+ Et nous appelerons \og avantage faible\fg: un avantage sur un seul système.
+ Dans chacun des tableaux suivants nous allons commenter le nombre de points gagnés par chaque système.
+ Chaque tableau est organisé dans l'ordre décroissant des nombres à gagner.
+ Chaque ligne représente ce que chaque système a répondu.
+ Si la réponse est verte c'est que le système a attribué le bon label.
+ Si la réponse est noire c'est que le système a attribué un autre label \textit{Related} incorrect (pour la classe unrelated les bonnes réponses seront toujours des réponses en noir).
+ Si la réponse est rouge c'est que le système a classé les éléments en \textit{unrelated} alors qu'ils étaient \textit{Related} (ou vice-versa).
+ Le nombre de points représente le nombre d'élément classé (sauf pour la classe \textit{unrelated} où il faut appliquer un facteur 4).
+ 
+ \subsubsection{Agree}
+ \paragraph{Avantage : une erreur}
+ \input{subsections/courses/agree/_1}
+ 
+ La plus grosse source d'erreur pour la classe agree est de les associer à des discuss.
+ Les lignes 1, 2 et 3 en témoignent.
+ Chaque système pêche sur cette distinction apparement à plus ou moins grand échélle.
+ Nous remarquons de manière mineur la présence de la classe disagree, qui apporte des erreurs peu significatives.
+ \paragraph{Avantage : 2 erreurs}
+ \input{subsections/courses/agree/_2}
+ 
+ Solat prend un fort avantage par rapport aux autres (ligne 1).
+ Pour autant, chacun des systèmes est spécialisé pour retrouver des éléments labélisés agree parmis les discuss.
+ Encore une fois, la classe disagree est présente, mais sur des erreurs qui ne rapportent que peu de points.
+ \paragraph{Désavantage commun: 3 erreurs}
+ \input{subsections/courses/agree/_3}
+ 
+ Ici, nous avons la preuve que la distinction entre discuss et la classe agree est primordiael pour améliorer les résultats. Plus de 300 points sont perdus dans ce type d'erreur de classification.
+ \subsubsection{Disagree}
+ \paragraph{Avantage : une erreur}
+ \input{subsections/courses/disagree/_1}
+ 
+ Il n'y a que  très peu de points où plusieurs systèmes s'accordent à labéliser disagree.
+ Ceci montre bien que cette classe sous-représentée n'a pas de traits significatifs suiffisants.
+ 
+ \paragraph{Avantage : 2 erreurs}
+ \input{subsections/courses/disagree/_2}
+ Nous voyons aussi ici qu'il est rare que deux systèmes soient de concert même dans l'erreur.
+ 
+ \paragraph{Désavantage commun: 3 erreurs}
+ \input{subsections/courses/disagree/_3}
+ 
+ L'absence d'entrinement suffisant, et la prédominance des autres classes, fait que les points de la classe sont hors d'atteinte de tous les systèmes.
+ \subsubsection{Discuss}
+ \paragraph{Avantage : une erreur}
+ \input{subsections/courses/discuss/_1}
+ De manière similaire, la classe discuss souffre du même mal que la classe agree.
+ On voit que Solat labélise plus souvent agree que discuss.
+ Le facteur de connivence entre le titre et le corps du texte est peut-être à revoir pour Solat.
+ 
+ \paragraph{Avantage : 2 erreurs}
+ \input{subsections/courses/discuss/_2}
+ En somme les différentes erreurs de chaque participant ne participent pas à favoriser un système ici.
+ \paragraph{Désavantage commun: 3 erreurs}
+ \input{subsections/courses/discuss/_3}
+ 
+ \subsubsection{Unrelated}
+ \paragraph{Avantage : une erreur}
+ \input{subsections/courses/unrelated/_1}
+ Nous remarquons que UCLMr a plus de mal à classer les unrelated par rapport aux autres.
+ Mais cela ne reste qu'un petit désavantage par rapport aux autres classes.
+ \paragraph{Avantage : 2 erreurs}
+ \input{subsections/courses/unrelated/_2}
+ Le biais vers les classes agree et discuss est bien souligné.
+ \paragraph{Désavantage commun: 3 erreurs}
+ \input{subsections/courses/unrelated/_3}
+ Au  final,  seuls peu de points sont perdus pour le la classe unrelated par rapport aux classes related.
+ 
+ \subsection{Fin de courses et analyse des arrivées.}
+ 
+ \begin{center}
+  \begin{tabular}{ r | c || c c c }
+   Stance    & points & Solat   & Athene  & UCLMR  \\ \hline
+   Départ   & 6171   & 6171    & 6171    & 6171   \\ \hline
+   agree     &        &         &         &        \\
+   1 erreur  & 329    & 242.75  & 251.75  & 236.5  \\
+   2 erreurs & 457    & 328.0   & 164.5   & 172.5  \\
+   3 erreurs & 376    & 72.5    & 68.25   & 76.25  \\\hline
+   disagree  &        &         &         &        \\
+   1 erreur  & 13     & 6.25    & 12.25   & 10.75  \\
+   2 erreurs & 72     & 18.25   & 49.5    & 36.25  \\
+   3 erreurs & 464    & 95.5    & 89.75   & 94.25  \\\hline
+   discuss   &        &         &         &        \\
+   1 erreur  & 716    & 439.0   & 545.0   & 589.0  \\
+   2 erreurs & 391    & 190.0   & 178.25  & 171.75 \\
+   3 erreurs & 239    & 33.5    & 30.25   & 32.0   \\\hline
+   unrelated &        &         &         &        \\
+   1 erreur  & 69.0   & 53.75   & 59.5    & 24.75  \\
+   2 erreurs & 26.0   & 2.25    & 19.75   & 4.0    \\
+   3 erreurs & 10.5   & 0       & 0       & 0      \\   \hline
+   Somme     & 9333.5 & 7652.75 & 7639.75 & 7619.0 \\
+  \end{tabular}
+  \captionof{table}{Tableau récapitulatif des sommes des avantges de chaque système en fonction des labels et du nombres d'erreurs.}
+ \end{center}
+ 
+ En faisant la somme de tous les avantages à une erreur, ceux à deux et le départ\footnote{C'est-à-dire toutes les entrées où au moins un système ne s'est pas trompé.} on obtient 8244 points.
+ C'est-à-dire un pourcentage FNC de 88.32\%.
+ Donc avec la combinaison adéquate des modèles actuels nous pouvons beaucoup améliorer le score général.
+ 
+ De plus, si nous prenons en compte les biais inhérents aux données comme nous l'avons vu précédemment il est peut-être possible d'améliorer d'avantage ce résultat.
+ À savoir qu'il faut mieux distinguer la classe discuss de la classe agree. Se concentrer sur la classe disagree pourrait être rentable\footnote{Rentabilité relative à la propotion de données dans les corpus.} seulement si nous trouvons des traits plus distinctif pour cette classe. Sinon c'est une classe qui ne vaut pas le coup. Améliorer les résultats pour la classe unrelated parait difficile. Les résultats pour cette classe sont beaucoup trop bons. Essayer de les améliorer serait futile.
+\end{document}
+\grid

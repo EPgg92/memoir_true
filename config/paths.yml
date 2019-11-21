@@ -1,0 +1,15 @@
+root: ~/github/fnc-1/
+
+results_test_fnc:
+  uclmr:
+    labels: /home/poggioe0/github/fnc-1/result/uclmr/predictions_test.csv
+    probs: /home/poggioe0/github/fnc-1/result/uclmr/predictions_test_probs.csv
+  athene:
+    labels: /home/poggioe0/github/fnc-1/result/athene/submission.csv
+  solat:
+    labels: /home/poggioe0/github/fnc-1/result/solat/averaged.csv
+  solat_tree:
+    labels: /home/poggioe0/github/fnc-1/result/solat/tree_pred.csv
+    probs: /home/poggioe0/github/fnc-1/result/solat/tree_pred.csv
+  solat_deep:
+    probs: /home/poggioe0/github/fnc-1/result/solat/deepoutput.csv

@@ -1,0 +1,41 @@
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{athene}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 709   & 57       & 669     & 133       & 1568  \\
+  disagree  & 193   & 56       & 193     & 108       & 550   \\
+  discuss   & 388   & 30       & 2853    & 279       & 3550  \\
+  unrelated & 16    & 3        & 86      & 14557     & 14662 \\
+  \hline
+  Somme     & 1306  & 146      & 3801    & 15077     & 20330 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+
+La table de confusion d'Athene ressembe beaucoup à celle de Solat. Ce modèle tente beaucoup plus de labéliser des titres d'articles comme \textbf{diagree}. Mais il a beaucoup plus de mal à distinguer la classe \textbf{discuss} de la classe \textbf{agree}.
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{athene}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.45  & 0.1      & 0.8     & 0.99      \\
+  Rappel     & 0.54  & 0.38     & 0.75    & 0.97      \\
+  F1score    & 0.49  & 0.16     & 0.78    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.4}\\
+  Score FNC & \multicolumn{4}{c}{7639.75}\\
+  Pourcentage FNC & \multicolumn{4}{c}{81.85}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+Athene a la meilleure exactitude de toute la FNC car elle classe très bien les \textbf{unrelated} (qui ne valent pas beaucoup de points dans le score FNC).

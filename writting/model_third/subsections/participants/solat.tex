@@ -1,0 +1,123 @@
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{solat}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 927   & 11       & 478     & 152       & 1568  \\
+  disagree  & 217   & 8        & 235     & 90        & 550   \\
+  discuss   & 661   & 5        & 2700    & 184       & 3550  \\
+  unrelated & 26    & 0        & 172     & 14464     & 14662 \\
+  \hline
+  Somme     & 1831  & 24       & 3585    & 14890     & 20330 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+On remarque que la classe \textbf{disagree} est largement sous-représentée. Cette classe est aussi sous-représentée dans l'ensemble d'entrainement. Ce qui explique potentiellement pourquoi nous ne détectons pas ces traits distinctifs. Nous présentons les participants du premiers au derniers selon le score FNC.
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{solat}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.59  & 0.01     & 0.76    & 0.99      \\
+  Rappel     & 0.51  & 0.33     & 0.75    & 0.97      \\
+  F1score    & 0.55  & 0.03     & 0.76    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.03}\\
+  Score FNC & \multicolumn{4}{c}{7652.75}\\
+  Pourcentage FNC & \multicolumn{4}{c}{81.99}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+Bien que Solat in the Swen ait remporté la 1er place de la FNC, l'exactitudes et les scores ci-dessus ne sont pas les maximaux.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection{Les sous-modèles de Solat in the Swen.}
+\paragraph{Sous-modèle arborescent de Solat in the Swen}
+Les sous-modèles de Solat n'ont pas eu de soumission à la FNC mais ils sont quand même intéressants à étudier car ils expliquent les résultats et les biais du modèles.
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{solat tree}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 807   & 0        & 690     & 71        & 1568  \\
+  disagree  & 147   & 1        & 334     & 68        & 550   \\
+  discuss   & 500   & 1        & 2902    & 147       & 3550  \\
+  unrelated & 16    & 0        & 160     & 14486     & 14662 \\
+  \hline
+  Somme     & 1470  & 2        & 4086    & 14772     & 20330 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+
+On voit d'où le modèle principal tient son aversion du label \textbf{disagree}.
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{solat tree}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.51  & 0.0      & 0.82    & 0.99      \\
+  Rappel     & 0.55  & 0.5      & 0.71    & 0.98      \\
+  F1score    & 0.53  & 0.0      & 0.76    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.5}\\
+  Score FNC & \multicolumn{4}{c}{7749.5}\\
+  Pourcentage FNC & \multicolumn{4}{c}{83.03}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+Ce sous-modèles ne tient pas vraiment compte de la classe \textbf{disagree} mais il a paradoxalement tout de même les plus hauts scores du challenge. En effet si Solat avait proposé uniquement ce modèle il aurait pris encore plus  d'avance par rapport aux autres participants.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Sous-modèle de Deep Learning de Solat in the Swen}
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{solat deep}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 911   & 115      & 143     & 399       & 1568  \\
+  disagree  & 271   & 62       & 41      & 176       & 550   \\
+  discuss   & 1396  & 137      & 1397    & 620       & 3550  \\
+  unrelated & 2321  & 449      & 766     & 11126     & 14662 \\
+  \hline
+  Somme     & 4899  & 763      & 2347    & 12321     & 20330 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+
+Nous voyons clairement que ce sous-modèle vient équilibrer le sous-modèle arborescent. Sa table de confusion montre une tentative d'uniformisation de la classe \textbf{disagree}.
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{solat deep}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.58  & 0.11     & 0.39    & 0.76      \\
+  Rappel     & 0.19  & 0.08     & 0.6     & 0.9       \\
+  F1score    & 0.28  & 0.09     & 0.47    & 0.82      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{66.38}\\
+  Score FNC & \multicolumn{4}{c}{5677.25}\\
+  Pourcentage FNC & \multicolumn{4}{c}{60.83}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+Cette uniformisation a pour conséquence que ce sous-modèle est le pire de tous les modèles. Combiné avec le sous-modèle arborescent, il permet d'avoir une augmentation minime de la classe \textbf{disagree} au détriment des autres classes.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

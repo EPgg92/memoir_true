@@ -1,0 +1,22 @@
+# Find here all the constants use in scripts folder.
+
+# Labels constants
+related:
+  - agree
+  - disagree
+  - discuss
+labels:
+  - agree
+  - disagree
+  - discuss
+  - unrelated
+labels_number:
+  agree: 0
+  disagree: 1
+  discuss: 2
+  unrelated: 3
+revert_labels_number:
+  0 : agree
+  1 : disagree
+  2 : discuss
+  3 : unrelated

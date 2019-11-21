@@ -1,0 +1,34 @@
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+ \multicolumn{6}{c}{model}\\
+\hline
+ & agree & disagree & discuss & unrelated & Somme\\
+\hline
+agree & 1059 & 3 & 729 & 112 & 1903\\
+disagree & 253 & 14 & 323 & 107 & 697\\
+discuss & 684 & 7 & 3530 & 243 & 4464\\
+unrelated & 45 & 0 & 288 & 18016 & 18349\\
+\hline
+Somme & 2041 & 24 & 4870 & 18478 & 25413\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+ \multicolumn{5}{c}{model}\\
+Mesure & agree & disagree & discuss & unrelated\\
+\hline
+Précision & 0.56 & 0.02 & 0.79 & 0.98\\
+Rappel & 0.52 & 0.58 & 0.72 & 0.97\\
+F1score & 0.54 & 0.04 & 0.76 & 0.98\\
+\hline
+\hline
+Exactitude & \multicolumn{4}{c}{89.01}\\
+Score FNC & \multicolumn{4}{c}{9606.75}\\
+Pourcentage FNC & \multicolumn{4}{c}{82.45}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}

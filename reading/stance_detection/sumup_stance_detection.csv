@@ -1,0 +1,42 @@
+file_name,article_name,who,institution,goal,context,datas,methodology,features,modele,algorithm,results,analyse,limites,relevance
+W11-1701.pdf,Cats Rule and Dogs Drool!: Classifying Stance in Online Debate,"Pranav Anand, Marilyn Walker, Rob Abbott, Jean E. Fox Tree, Robeson Bowmani, and Michael Minor",University of California Santa Cruz,"Ils examinent le corpus ConvinceMe.net
+les débats idéologiques comportent une plus grande part de messages de réfutation, et il est beaucoup plus difficile de classer les posts de réfutation pour les positions, aussi bien pour les humains que pour les classificateurs formés.
+Il montre que les expressions subjective varie en fonction du débat.
+Présente les résultats de leur méthodes pour (identifier les réfutations, détection de parti-pris).",Proceedings of the 2nd Workshop on Computational Approaches to Subjectivity and Sentiment Analysis,"ConvinceMe.net
+Soit 1113 débat bi-partiaux (soit 4873 posts) dans 14 sujet différents.","Afin de constituer le corpus les autheurs ont utilisé le crowd soursing. 
+Ils n’ont pris que les données se recoupant.
+Fait intéressant il s est plus simple de trouver les réfutations dans cats vs dogs que dans le climate change."," Weka
+1 2 3 gramsToolkit
+Cue words
+Répétition de la ponctuation
+LIWC
+Dépendance syntaxique
+Dépendance d’opinion
+Context features",,"Baseline Naive bayes + Jrip
+Un système par features énoncé précédement","63% pour la détection de réfutation en moyenne 
+Qui varie entre 59 % et 69 % par topic 
+Les humains par topic varient entre 66 et 94
+Soit 0.73 d’exactitude pour les humains
+",Les résultats sont comparés sur différents systèmes et aucun ne se démarque plus que les autres.,Ils ne battent pas les les baselines à unigrams…,Montre beaucoup de technique pour retirer des features qui peuvent montrer des indices de Stance 
+W17-4215.pdf,From Clickbait to Fake News Detection: An Approach based on Detecting the Stance of Headlines to Articles,"Peter Bourgonje, Julian Moreno Schneider, Georg Rehm","DFKI GmbH, Language Technology Lab",Présente le back-end d'un ensemble intelligent d'outils autour de la vérification des faits et peut augmenter les nouvelles provenant de sources traditionnelles et non traditionnelles (médias sociaux),"Proceedings of the 2017 EMNLP Workshop on Natural Language Processing meets Journalism
+Fake News Challenge",Fake news Challenge,"TF-IDF pour la sélection des n-grams qui feront partie du corpus.
+3 système
+Majority vote
+3-class classifier
+Combined classifiers 
+",N-gram 1..6 on lemmatized input (removed if only stopwords and ponctuations),"Majority vote
+3-class classifier
+Combined classifiers","Mallet’s Logistic Regression classifier implementation (McCallum, 2002)",weighted) accuracy score of 89.59,"Leur nouveau système bat allégrement les système gagnant de FNC ?? 
+Ils ont été classé 9th en juin lors de la soumission. ",,Donne une bonne méthode pour effectuer le challenge.
+N16-1138.pdf,Emergent: a novel data-set for stance classification,"William Ferreira, Andreas Vlachos","University College London, University of Sheffield","Ils présentent le nouveau corpus de données Emergent (qui est utilisé dans la FNC)
+",Proceedings of NAACL-HLT 2016,"l'ensemble de données contient 300 réclamations rumeurs et 2 595 nouvelles 
+associées articles, collectés et étiquetés par des journalistes avec une estimation
+ De leur véracité (vrai, faux ou non vérifié)",,"Headline Features
+ → use BOW
+ → repair les ? 
+ → minimum distance syntaxique (en nombre d’arches) done with CoreNLP 
+Claim-headline features
+ → Paraphrase Database Rus and Lintean (2012)",MaxEntClassificationEDA,,The accuracy achieved was 73,,,décrit les données de FNC
+2754942.pdf,“Is it true?” – Deep Learning for Stance Detection in News,"Neel Rakholia, Shruti Bhargava",Stanford University,,Stanford University publication,,,,,,,,,
+2760496.pdf,Stance Detection for Fake News Identification,"Damian Mrowca, Elias Wang, Atli Kosson",Stanford University,,,,,,,,,,,
+1606.05464.pdf,Stance Detection with Bidirectional Conditional Encoding,"Isabelle Augenstein, Tim Rocktäschel, Andreas Vlachos, Kalina Bontcheva","University College London, University of Sheffield",,,,,,,,,,,

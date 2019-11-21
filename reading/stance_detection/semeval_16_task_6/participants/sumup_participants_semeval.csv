@@ -1,0 +1,45 @@
+file_name,article_name,who,institution,goal,context,datas,methodology,features,modele,algorithm,results,analyse,limites,relevance,semeval_rank
+1701.00504.pdf,Stance detection in online discussions,"Peter Krejzl, Barbora Hourová, Josef Steinberger","Department of Computer Science and Engineering, NTIS Center,",L'objectif est d'identifier l'auteur d'un commentaire est en faveur  de produire un système qui de détection de parti-pris pour le tchèque de la cible donnée ou contre.,SemEval 2016 task 6: Detecting stance in tweets,"SemEval Datas
++ commentaires tchèque à propos de fumer dans les bar et du président.",Utilise TF-IDF (),"Unigrams+
+ Initial n-grams
+Longueur des commentaires","Remplace urls par URLS,
+ image par IMG.
+ Pas de caractère spéciaux pas de ponctuation. 
+Stem avec HPS
+Utilise un Entity-centered sentiment dictionaries",maximum entropy classifier,"9th pour SE en moyenne dans la tâche (0.47-0.63) de F1-score selon la cat
+Des résultats médiocre pour le tchèque (0.43-0.47) de F1-score selon la cat",Des résultat en tchèque bien plus mauvais (du au manque de mot de domaine spécifique et de hastags),"Les meilleurs F1-score sont sur calculé sur le moins d’élément testé ! Legalization of abortion .6198 (2)
+Trop petit échantillon de test de même pour le plus mauvais Climate change is a real concern  .4690 (3)",Cette étude nous apporte des méthode de stance détection simple. ,9A
+S16-1061.pdf,INF-UFRGS-OPINION-MINING at SemEval-2016 Task 6: Automatic Generation of a Training  Corpus for Unsupervised Identification of Stance in Tweets,"Marcelo Dias, Karin Becker","Instituto de Informática (INF), Universidade Federal do Rio Grande do Sul (UFRGS)",L'objectif est d'identifier l'auteur d'un commentaire est en faveur  de produire un système qui de détection de parti-pris pour le tchèque de la cible donnée ou contre.,SemEval 2016 task 6 task B,SemEval Datas ils utilisent les données sur hillary clinton de la tache à car les données sont très proche,"utilise la sentimental analyse et la détection de parti pris avec n-grams séléctionné par rapport au tweet d’hillary mais trié pour ne pas manuellement par une équipe pour répndre au personnage de trump.
+Ils ont labélisét tou les tweets en rapport avec hillary pour selon un tableau de règles. ",Ngrams 1 2 3 ,"a) convertir tous les textes de tweet en minuscules;
+b) remplacer toutes les mentions pour les profils de tweet par le
+""a_mention"" unigram, sauf ceux contenant
+le texte d'un objectif lié au côté (par exemple ""realdon-
+aldtrump ""); c) soumettre le texte au Stringtoword-
+fonction vectorielle disponible dans Weka pour la fonction textuelle
+extraction et création de l'ensemble de données d'apprentissage. nous
+choisi les paramètres suivants pour l'extrac-
+tion: a) l'extraction des unigrammes alphabétiques et bi-
+grammes; b) suppression des mots vides; c) aucune limitation sur
+le nombre de n-grammes extraits; et d) reponse binaire
+la résentation des caractéristiques (c'est-à-dire la présence ou l'absence).","Weka platform (version 3.7.11) (Hall et al., 2009), and an SVM classification algorithm default parameters",F-score of 42.43,,beaucoup plus de tweets automatiquement labellées beaucoup plus d’erreur potentielle.,Nous montre combien la stance detection non supervisé est dure.,3B
+S16-1062.pdf,"pkudblab at SemEval-2016 Task 6 : A Specific Convolutional Neural
+Network System for Effective Stance Detection","Wan Wei, Xiao Zhang, Xuqin Liu, Wei Chen, Tengjiao Wang","Key Laboratory of High Confidence Software Technologies, Ministry of Education,
+School of Electronics Engineering and Computer Science,",L'objectif est d'identifier l'auteur d'un commentaire est en faveur  de produire un système qui de détection de parti-pris pour le tchèque de la cible donnée ou contre.,SemEval 2016 task 6 task A et B,"SemEval Datas 
+Google News database for embedding",ils ont designé un vote scheme ! Ils ont séparé pour la tache Ales cinq sous ensemble d’entrainement ,vecteur de mots ,"Look-up table (semantic space)
+Input matrix (qui utilise la look-up table)
+CNN
+Activation fonction ReLU
+Vote scheme 
+”divide and conquer” for task A
+”2-step” scheme for task B",convolutional neural network,Très bon score ,"On voit que le CNN marche très bien pour les deux tâches !
+La méthode de Vote scheme doit avoir une grande influence sur les résultats aussi !",L’initialisation à des vecteurs de mots avec du word embbeding est-elle pertinente ?,Le CNN peut être une bonne méthode à étudié il faut bine lui spécifier les features dans une espace pré-entrainé (couteux),2A 1B
+S16-1063.pdf,"USFD at SemEval-2016 Task 6: Any-Target Stance Detection on Twitter
+with Autoencoders","Isabelle Augenstein, Andreas Vlachos, Kalina Bontcheva","Department of Computer Science, University of Sheffield",L'objectif est d'identifier l'auteur d'un commentaire est en faveur  de produire un système qui de détection de parti-pris pour le tchèque de la cible donnée ou contre.,SemEval 2016 task 6 task B,"semEval Datas
+Tweet collectés avec des mots clés du 18 nov au 13 janvier (+ 390000 tweets)",Utilise des bags of word auto-encoders (),unigrams et bigrams  nltk tokeniser(),BOW 50000 words input dim converge 100 output dim  ,logistic regression classifier,F1 of 0.3270.,Des résultats bien faible.,Les espaces sémantiques des autres tweets ne sont pas représentatifs de la cible ici traité (trump),Permet de voir les approches qui ne marche pas et surtout montre combien cette tâche est difficile ,6B
+S16-1064.pdf,"IUCL at SemEval-2016 Task 6:
+An Ensemble Model for Stance Detection in Twitter","Can Liu, Wen Li, Bradford Demarest, Yue Chen, Sara Couture, Daniel Dakota,
+Nikita Haduong, Noah Kaufman, Andrew Lamont, Manan Pancholi,
+Kenneth Steimel, Sandra Kübler",Indiana University,L'objectif est d'identifier l'auteur d'un commentaire est en faveur  de produire un système qui de détection de parti-pris pour le tchèque de la cible donnée ou contre.,SemEval 2016 task 6 task A et B,,"Notre analyse montre que la forêt aléatoire est bonne
+à la récupération des classes minoritaires et gradient
+stimuler les classes majoritaires.",,,"SVMs, random
+forest, gradient boosting decision trees",,,,,6A

@@ -1,0 +1,140 @@
+
+\documentclass[onecolumn, 12pt]{article}
+
+%!TeX spellcheck =fr
+  \usepackage[utf8]{inputenc}
+  \usepackage{hyperref}
+  \usepackage[T1]{fontenc}
+  \usepackage[francais]{babel}
+  \usepackage{layout}
+  \usepackage{verbatim}[4]
+  \usepackage{color}
+
+  \usepackage{graphicx}
+  \usepackage{caption}
+  \usepackage{subcaption}
+
+  \usepackage{titlesec}
+
+  \setcounter{secnumdepth}{4}
+
+  \titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+  \titlespacing*{\paragraph}
+  {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\title{Premier modèle pour répondre à la FNC.}
+  \author{Enzo Poggio}
+\begin{document}
+\maketitle{}
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{mv solat}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 923   & 13       & 815     & 152       & 1903  \\
+  disagree  & 228   & 20       & 321     & 128       & 697   \\
+  discuss   & 483   & 4        & 3729    & 248       & 4464  \\
+  unrelated & 27    & 0        & 149     & 18173     & 18349 \\
+  \hline
+  Somme     & 1661  & 37       & 5014    & 18701     & 25413 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{mv solat}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.49  & 0.03     & 0.84    & 0.99      \\
+  Rappel     & 0.56  & 0.54     & 0.74    & 0.97      \\
+  F1score    & 0.52  & 0.05     & 0.79    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.89}\\
+  Score FNC & \multicolumn{4}{c}{9681.25}\\
+  Pourcentage FNC & \multicolumn{4}{c}{83.09}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{mv athene}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 914   & 42       & 809     & 138       & 1903  \\
+  disagree  & 213   & 46       & 308     & 130       & 697   \\
+  discuss   & 453   & 21       & 3735    & 255       & 4464  \\
+  unrelated & 14    & 2        & 148     & 18185     & 18349 \\
+  \hline
+  Somme     & 1594  & 111      & 5000    & 18708     & 25413 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{mv athene}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.48  & 0.07     & 0.84    & 0.99      \\
+  Rappel     & 0.57  & 0.41     & 0.75    & 0.97      \\
+  F1score    & 0.52  & 0.11     & 0.79    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{90.03}\\
+  Score FNC & \multicolumn{4}{c}{9702.75}\\
+  Pourcentage FNC & \multicolumn{4}{c}{83.28}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{mv uclmr}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 920   & 13       & 844     & 126       & 1903  \\
+  disagree  & 202   & 35       & 339     & 121       & 697   \\
+  discuss   & 467   & 26       & 3728    & 243       & 4464  \\
+  unrelated & 19    & 1        & 157     & 18172     & 18349 \\
+  \hline
+  Somme     & 1608  & 75       & 5068    & 18662     & 25413 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{mv uclmr}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.48  & 0.05     & 0.84    & 0.99      \\
+  Rappel     & 0.57  & 0.47     & 0.74    & 0.97      \\
+  F1score    & 0.52  & 0.09     & 0.78    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{89.93}\\
+  Score FNC & \multicolumn{4}{c}{9698.75}\\
+  Pourcentage FNC & \multicolumn{4}{c}{83.24}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+\end{document}
+\grid

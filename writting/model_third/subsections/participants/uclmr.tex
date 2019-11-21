@@ -1,0 +1,41 @@
+
+
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c | c }
+  \multicolumn{6}{c}{uclmr}\\
+  \hline
+            & agree & disagree & discuss & unrelated & Somme \\
+  \hline
+  agree     & 697   & 7        & 770     & 94        & 1568  \\
+  disagree  & 144   & 37       & 277     & 92        & 550   \\
+  discuss   & 424   & 35       & 2882    & 209       & 3550  \\
+  unrelated & 44    & 2        & 261     & 14355     & 14662 \\
+  \hline
+  Somme     & 1309  & 81       & 4190    & 14750     & 20330 \\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}
+
+
+Nous observons une tentative d'uniformisation proportionnelle de la table de confusion.
+UCLMR sait très bien classé les \textbf{unrelated}. Néanmoins, il manque apparemment de traits pour distinguer les \textbf{agree} des \textbf{discuss}.
+
+
+\begin{center}
+ \begin{tabular}{ r | c c c c }
+  \multicolumn{5}{c}{uclmr}\\
+  Mesure     & agree & disagree & discuss & unrelated \\
+  \hline
+  Précision & 0.44  & 0.07     & 0.81    & 0.98      \\
+  Rappel     & 0.53  & 0.46     & 0.69    & 0.97      \\
+  F1score    & 0.48  & 0.12     & 0.74    & 0.98      \\
+  \hline
+  \hline
+  Exactitude & \multicolumn{4}{c}{88.4}\\
+  Score FNC & \multicolumn{4}{c}{7619.0}\\
+  Pourcentage FNC & \multicolumn{4}{c}{81.63}\\
+ \end{tabular}
+ \captionof{table}{}
+\end{center}

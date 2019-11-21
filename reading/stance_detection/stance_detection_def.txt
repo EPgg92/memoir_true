@@ -1,0 +1,2 @@
+La détection de parti-pris a été définie comme la détection automatiquement par rapport à une cible
+pour un auteur d'un morceau de texte savoir si celui-ci est en faveur de la cible donnée ou contre elle. 

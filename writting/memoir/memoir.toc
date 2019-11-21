@@ -1,0 +1,90 @@
+\babel@toc {french}{}
+\contentsline {chapter}{\chapternumberline {1}Introduction: Qu'est-ce qu'une \textit {Fake News}?}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Vers une d\IeC {\'e}finition du concept de \textit {Fake News}.}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Produire des \textit {Fake News}; une intention de tromper.}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Limites de la d\IeC {\'e}finition.}{8}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Pourquoi produire des \textit {Fake News}?}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Le contexte des \textit {Fake News}.}{8}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Le syst\IeC {\`e}me mon\IeC {\'e}taire des \textit {Fake News}.}{10}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Raisons id\IeC {\'e}ologiques.}{10}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Les origines des \textit {Fake News}.}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Des m\IeC {\'e}dias n\IeC {\'e}gligents.}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Des organisations malveillantes internationales.}{11}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}La propagation des \textit {Fake News}.}{11}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Les r\IeC {\'e}seaux sociaux : m\IeC {\'e}diations des \textit {Fake News}}{11}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Le biais de confirmation.}{12}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Tri de l'information selon Kahneman.}{13}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Les risques des \textit {Fake News}.}{13}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Les risques politiques.}{13}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Les risques sanitaires.}{14}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}D\IeC {\'e}tournement des news vers des sujets clivants.}{15}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}L\IeC {\'e}gitimit\IeC {\'e} du projet et motivations.}{15}{section.1.6}
+\contentsline {section}{\numberline {1.7}Comment d\IeC {\'e}tecter une \textit {Fake News}?}{15}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Comment v\IeC {\'e}rifier des informations ?}{15}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}M\IeC {\'e}thode informatique actuelle: \textit {Stance Detection}.}{16}{subsection.1.7.2}
+\contentsline {chapter}{\chapternumberline {2}\IeC {\'E}tat de l'art: \textit {Stance Detection}}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Vers une d\IeC {\'e}finition.}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Formalisation de la \textit {Stance Detection}.}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Domaine de la d\IeC {\'e}tection de parti.}{18}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}La gen\IeC {\`e}se de la d\IeC {\'e}tection de parti pris.}{18}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Application g\IeC {\'e}n\IeC {\'e}rale et relative au \textit {Fake News}.}{19}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}\textit {SemEval-2016 Task 6}.}{19}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Description g\IeC {\'e}n\IeC {\'e}rale de la t\IeC {\^a}che.}{19}{subsection.2.2.1}
+\contentsline {subsubsection}{Sous-t\IeC {\^a}che A.}{20}{subsubsection*.3}
+\contentsline {subsubsection}{Sous-t\IeC {\^a}che B.}{20}{subsubsection*.4}
+\contentsline {subsubsection}{\IeC {\'E}valuation.}{20}{subsubsection*.5}
+\contentsline {subsection}{\numberline {2.2.2}Les participants.}{20}{subsection.2.2.2}
+\contentsline {subsubsection}{D\IeC {\'e}pots en g\IeC {\'e}n\IeC {\'e}ral.}{20}{subsubsection*.6}
+\contentsline {subsubsection}{D\IeC {\'e}pots particuliers.}{21}{subsubsection*.7}
+\contentsline {paragraph}{MITRE 1er pour la t\IeC {\^a}che A.}{21}{paragraph*.8}
+\contentsline {paragraph}{pkudblab 2\IeC {\`e}me pour la t\IeC {\^a}che A.}{21}{paragraph*.9}
+\contentsline {paragraph}{pkudblab 1er pour la t\IeC {\^a}che B.}{22}{paragraph*.10}
+\contentsline {subsubsection}{Discussions comparatives.}{22}{subsubsection*.11}
+\contentsline {section}{\numberline {2.3}\textit {Fake News Challenge}.}{23}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Description g\IeC {\'e}n\IeC {\'e}rale de la t\IeC {\^a}che}{23}{subsection.2.3.1}
+\contentsline {subsubsection}{But.}{23}{subsubsection*.12}
+\contentsline {subsubsection}{Organisation g\IeC {\'e}n\IeC {\'e}rale.}{23}{subsubsection*.13}
+\contentsline {subsubsection}{Donn\IeC {\'e}es et origines des donn\IeC {\'e}es.}{23}{subsubsection*.14}
+\contentsline {subsubsection}{L'\IeC {\'e}valuation.}{25}{subsubsection*.15}
+\contentsline {subsubsection}{Baseline.}{26}{subsubsection*.16}
+\contentsline {subsubsection}{Les participants.}{26}{subsubsection*.17}
+\contentsline {subsection}{\numberline {2.3.2}Solat in the swen.}{26}{subsection.2.3.2}
+\contentsline {subsubsection}{M\IeC {\'e}thodologie.}{26}{subsubsection*.18}
+\contentsline {subsubsection}{R\IeC {\'e}sultats.}{28}{subsubsection*.19}
+\contentsline {subsection}{\numberline {2.3.3}Athene (UKP Lab).}{29}{subsection.2.3.3}
+\contentsline {subsubsection}{M\IeC {\'e}thodologie.}{29}{subsubsection*.20}
+\contentsline {subsubsection}{R\IeC {\'e}sultats}{29}{subsubsection*.21}
+\contentsline {subsection}{\numberline {2.3.4}UCL Machine reading.}{30}{subsection.2.3.4}
+\contentsline {subsubsection}{M\IeC {\'e}thodologie.}{30}{subsubsection*.22}
+\contentsline {subsubsection}{R\IeC {\'e}sultats.}{30}{subsubsection*.23}
+\contentsline {subsection}{\numberline {2.3.5}Discussion comparative des mod\IeC {\`e}les et des r\IeC {\'e}sultats.}{31}{subsection.2.3.5}
+\contentsline {chapter}{\chapternumberline {3}Un challenge; des tentatives!}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Analyse des r\IeC {\'e}sultats des participants et cr\IeC {\'e}ation d'hypoth\IeC {\`e}ses.}{33}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Un aper\IeC {\c c}u de l'ensemble de test.}{33}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Les r\IeC {\'e}sultats et les scores des participants.}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Talos in the Swen.}{34}{subsection.3.2.1}
+\contentsline {subsubsection}{Les sous-mod\IeC {\`e}les de Talos in the Swen.}{35}{subsubsection*.24}
+\contentsline {paragraph}{Sous-mod\IeC {\`e}le arborescent de Talos in the Swen}{35}{paragraph*.25}
+\contentsline {paragraph}{Sous-mod\IeC {\`e}le de Deep Learning de Talos in the Swen}{35}{paragraph*.26}
+\contentsline {subsection}{\numberline {3.2.2}Le syst\IeC {\`e}me Athene}{36}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}UCL Machine Reader}{37}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Analyses et Hypoth\IeC {\`e}ses}{37}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Mod\IeC {\`e}les par combinaison:\\ Le vote de majorit\IeC {\'e}}{37}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Explication du mod\IeC {\`e}le.}{37}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Les r\IeC {\'e}sultats des votes de majorit\IeC {\'e}}{38}{subsection.3.3.2}
+\contentsline {subsubsection}{Dominant: Talos in the swen}{38}{subsubsection*.27}
+\contentsline {subsubsection}{Dominant: Athene}{39}{subsubsection*.28}
+\contentsline {subsubsection}{Dominant: UCL Machine Reader}{39}{subsubsection*.29}
+\contentsline {subsubsection}{Commentaires sur les r\IeC {\'e}sultats du vote de majorit\IeC {\'e}}{40}{subsubsection*.30}
+\contentsline {section}{\numberline {3.4}Mod\IeC {\`e}les par combinaison: \\ Par moyenne}{40}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Mod\IeC {\`e}les utiliseant \textit {50/50 weighted average}}{40}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}R\IeC {\'e}sultats}{40}{subsection.3.4.2}
+\contentsline {subsubsection}{Mod\IeC {\`e}les mixte UCLMR/Talos TF-Idf}{40}{subsubsection*.31}
+\contentsline {subsubsection}{Mod\IeC {\'e}les mixte UCLMR/Talos sans TF-Idf}{41}{subsubsection*.32}
+\contentsline {section}{\numberline {3.5}Apprentissage par ensemble: \\ Avec \textit {Single Layer Learner}}{42}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Explication du mod\IeC {\`e}le}{42}{subsection.3.5.1}
+\contentsline {subsubsection}{Code du mod\IeC {\`e}le}{42}{subsubsection*.33}
+\contentsline {subsection}{\numberline {3.5.2}R\IeC {\'e}sultats}{43}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Discussions}{43}{section.3.6}
+\contentsline {chapter}{\chapternumberline {4}Conclusions}{45}{chapter.4}
+\contentsline {appendix}{\chapternumberline {A}Appendice}{47}{appendix.A}
