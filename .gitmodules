@@ -1,9 +1,6 @@
 [submodule "solat"]
 	path = solat
 	url = https://github.com/poggioenzo/solat
-[submodule "fakenewschallenge"]
-	path = fakenewschallenge
-	url = https://github.com/uclnlp/fakenewschallenge
 [submodule "athene_system"]
 	path = athene_system
 	url = https://github.com/hanselowski/athene_system
