@@ -3,6 +3,12 @@
 
 A proposal to use Stance detection to better anticipate Fake News.
 
+## short abstract
+
+This thesis is a proposal to improve the results of the [Fake news Challenge](http://www.fakenewschallenge.org/).
+
+My proposal is a ensemble learning neural network from the winning systems of the FNC.
+
 ---
 # Tenter la Fake News Challenge
 
@@ -23,7 +29,7 @@ fausses nouvelles (Fake News)? Peut-on parler deFake Newsde manière objective? 
 termeFake News? D’ou proviennent ces fameusesFake Newset que font-elles? Et pourquoi est-ce
 important d’en parler?
 Puis nous présentons un bref état actuel de laStance Detection. Nous montrons comment elle peut
-être utile pour détecter lesFake Newsen présentant deux tâches, à savoir laSemEval-2016 Task 6et la
+être utile pour détecter lesFake Newsen présentant deux tâches, à savoir la SemEval-2016 Task 6 et la
 Fake News Challenge.
 Enfin nous présentons et discutons nos propres résultats à laFake News Challenge(dont certains
 dépassent l’état de l’art) et notre utilisation des combinaisons de modèles et de l’apprentissage par
