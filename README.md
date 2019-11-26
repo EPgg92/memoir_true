@@ -9,6 +9,8 @@ This thesis is a proposal to improve the results of the [Fake news Challenge](ht
 
 My proposal is a ensemble learning neural network from the winning systems of the FNC.
 
+Read the memoir [here](https://github.com/poggioenzo/memoir_true/blob/master/memoir.pdf)
+
 ---
 # Tenter la Fake News Challenge
 
